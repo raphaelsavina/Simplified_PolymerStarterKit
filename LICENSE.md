@@ -1,8 +1,7 @@
 # License
 
-
 ## Work based on Polymer Starter Kit
-
+https://github.com/PolymerElements/polymer-starter-kit
 
 Everything in this repo is BSD style license unless otherwise specified.
 
