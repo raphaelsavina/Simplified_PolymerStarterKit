@@ -133,6 +133,10 @@ Polymer uses [Bower](http://bower.io) for package management. This makes it easy
 
 Components installed by Bower live in the `app/bower_components` directory. This location is specified by the `.bowerrc` file. Many projects which follow Yeoman conventions place the `bower_components` directory outside of the `app` directory and then mount it using a server. This causes problems for tools like [Vulcanize](https://github.com/polymer/vulcanize) and [web-component-shards](https://github.com/PolymerLabs/web-component-shards) which rely on relative paths. We've chosen to simplify things and have `bower_components` live inside of `app` to resolve these issues.
 
+## Favicon
+
+You can use this online [generator](http://www.favicon-generator.org/) to create from one square image all
+
 ## Deploy
 
 ### Firebase
