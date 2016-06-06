@@ -37,8 +37,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     --dark-accent-color: var(--paper-pink-a400);
     /* Components */
 }
-/* General styles */
-
 body {
     background: #fafafa;
     font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -50,25 +48,12 @@ body {
 neon-animated-pages {
     height: 100%;
 }
-.space {
-    @apply(--layout-flex);
-}
 paper-material {
     border-radius: 2px;
     padding: 32px;
     width: calc(90% - 32px);
     margin: 32px auto;
     background: white;
-}
-/* Breakpoints */
-/* Small */
-
-@media (max-width: 600px) {
-    paper-material {
-        width: calc(96% - 32px);
-        padding: 16px;
-        margin: 16px auto;
-    }
 }
 /* Material Design Adaptive Breakpoints */
 /*
@@ -80,16 +65,31 @@ paper-material {
    */
 /* mobile-small */
 
-@media all and (min-width: 0) and (max-width: 360px) and (orientation: portrait) {}
+@media all and (min-width: 0) and (max-width: 360px) and (orientation: portrait) {
+    paper-material {
+        width: calc(96% - 16px);
+        padding: 8px;
+        margin: 8px auto;
+    }
+}
 /* mobile-large */
 
-@media all and (min-width: 361px) and (orientation: portrait) {}
+@media all and (min-width: 361px) and (orientation: portrait) {
+        paper-material {
+        width: calc(96% - 32px);
+        padding: 16px;
+        margin: 8px auto;
+    }
+}
 /* mobile-small-landscape */
 
-@media all and (min-width: 0) and (max-width: 480px) and (orientation: landscape) {}
+@media all and (min-width: 0) and (max-width: 480px) and (orientation: landscape) {
+}
 /* mobile-large-landscape */
 
-@media all and (min-width: 481px) and (orientation: landscape) {}
+@media all and (min-width: 481px) and (orientation: landscape) {
+
+}
 /* tablet-small-landscape */
 
 @media all and (min-width: 600px) and (max-width: 960px) and (orientation: landscape) {}
@@ -98,10 +98,18 @@ paper-material {
 @media all and (min-width: 961px) and (orientation: landscape) {}
 /* tablet-small */
 
-@media all and (min-width: 600px) and (orientation: portrait) {}
+@media all and (min-width: 600px) and (orientation: portrait) {
+        paper-material {
+        width: calc(96% - 32px);
+        padding: 16px;
+        margin: 16px auto;
+    }
+}
 /* tablet-large */
 
-@media all and (min-width: 601px) and (max-width: 840px) and (orientation: portrait) {}
+@media all and (min-width: 601px) and (max-width: 840px) and (orientation: portrait) {
+
+}
 /* desktop-x-small-landscape */
 
 @media all and (min-width: 0) and (max-width: 480px) and (orientation: landscape) {}
