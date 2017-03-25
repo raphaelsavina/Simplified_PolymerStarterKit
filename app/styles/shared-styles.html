@@ -1,0 +1,27 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-styles/typography.html">
+<link rel="import" href="../bower_components/paper-styles/color.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+
+<!-- The following imports are available:
+ - iron-flex
+ - iron-flex-reverse
+ - iron-flex-alignment
+ - iron-flex-factors
+ - iron-positioning
+ -->
+
+<!-- shared styles for all elements and index.html -->
+<dom-module id="shared-styles">
+    <template>
+        <style include="iron-flex iron-flex-alignment iron-positioning">
+        paper-material {
+            border-radius: 2px;
+            padding: 32px;
+            width: calc(90% - 32px);
+            margin: 16px 16px;
+            background: white;
+        }
+        </style>
+    </template>
+</dom-module>
